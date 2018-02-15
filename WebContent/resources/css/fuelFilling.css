@@ -1,11 +1,11 @@
 .mainTable{
 	width: 700px;
 	 height: 400px; 
-	 background-color: #708090;
+	 background-color:#00FFFF;
 }
 
 .headerTitle{
-	color: Blue;
+	color: yellow;
 	 font-weight: bold;
 	 font-size: 24px;
 }
