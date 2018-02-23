@@ -54,6 +54,25 @@
           <warSourceDirectory>WebContent</warSourceDirectory>
         </configuration>
       </plugin>
+	    
+	    <distributionManagement>
+	<!-- This is added by balu -->
+		
+		<repository>
+			<id>releases</id>
+			<name>Releases</name>
+			<url>http://13.57.246.167:8081/nexus/content/repositories/releases/</url>
+			<snapshots><enabled>true</enabled></snapshots>
+		</repository>
+		
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Snapshots</name>
+			<url>http://13.57.246.167:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+		
+	</distributionManagement>
     </plugins>
   </build>
+	
 </project>
