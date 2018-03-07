@@ -57,16 +57,20 @@
     </plugins>
   </build>
 	<distributionManagement>
-        <repository>
-            <id>Releases</id>
-            <name>my_repo</name>
-            <url><my_url_to_my_repo></url>
-            <layout>default</layout>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>Snapshots</name>
-            <url><my_url_to_my_snapshot_repo></url>
-        </snapshotRepository>
-    </distributionManagement>
+	<!-- This is added by balu -->
+		
+		<repository>
+			<id>releases</id>
+			<name>Releases</name>
+			<url>http://34.210.244.180:8081/nexus/content/repositories/releases/</url>
+			<snapshots><enabled>true</enabled></snapshots>
+		</repository>
+		
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Snapshots</name>
+			<url>http://34.210.244.180:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+		
+	</distributionManagement>
 </project>
