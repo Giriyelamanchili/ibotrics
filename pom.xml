@@ -56,5 +56,17 @@
       </plugin>
     </plugins>
   </build>
-	
+	<distributionManagement>
+        <repository>
+            <id>Releases</id>
+            <name>my_repo</name>
+            <url><my_url_to_my_repo></url>
+            <layout>default</layout>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Snapshots</name>
+            <url><my_url_to_my_snapshot_repo></url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
